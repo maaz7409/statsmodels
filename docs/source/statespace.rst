@@ -837,9 +837,11 @@ dimensions, etc.) but it also holds the filtering output, including the
 loglikelihood (see the class documentation for the full list of available
 results). It also provides a
 :py:meth:`predict <kalman_filter.FilterResults.predict>` method, which allows
-in-sample prediction or out-of-sample forecasting. A similar method,
-:py:meth:`predict <kalman_filter.FilterResults.get_prediction>`, provides
-additional prediction or forecasting results, including confidence intervals.
+in-sample prediction or out-of-sample forecasting. The results of a fitted
+model (`MLEResults`) provide a similar method,
+:py:meth:`get_prediction <mlemodel.MLEResults.get_prediction>`, which also
+gives additional prediction or forecasting results, including confidence
+intervals.
 
 .. autosummary::
    :toctree: generated/
